@@ -21,4 +21,8 @@ def update_topics(mongo_collection, name, topics):
     rfsfsdfdsdfds
     3434"""
 
-    mongo_collection.update_many({"name":name}, {"topics":topics})
+    mongo_collection.update_many(
+    {"name": name},
+    {"$set": {"topics": topics}}
+    )
+
