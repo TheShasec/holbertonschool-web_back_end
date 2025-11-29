@@ -6,6 +6,13 @@ import pymongo
 
 
 def list_all(mongo_collection):
-    """e343243"""
+    """
+     Lists all documents in a collection
+        Args:
+            mongo_collection: Collection of object
+
+        Return:
+            List with documents, otherwise []
+    """
     
-    return mongo_collection.find()
+    return list(mongo_collection.find())
