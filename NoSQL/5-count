@@ -1,2 +1,2 @@
 // dfsfd
-db.school.countDocuments()
+db.school.count()
